@@ -17,4 +17,5 @@
   - texinfo
   - svn
   - python-devel
+  - lua
   # when: ansible_os_family == "Centos"
