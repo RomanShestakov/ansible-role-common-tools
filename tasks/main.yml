@@ -16,4 +16,5 @@
   - ncurses-devel
   - texinfo
   - svn
+  - python-devel
   # when: ansible_os_family == "Centos"
