@@ -11,4 +11,9 @@
   - openssl-devel
   - unzip
   - tar
+  - gzip
+  - wget
+  - ncurses-devel
+  - texinfo
+  - svn
   # when: ansible_os_family == "Centos"
