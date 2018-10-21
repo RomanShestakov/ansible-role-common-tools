@@ -11,6 +11,7 @@
   - strace
   - openssl-devel
   - unzip
+  - bzip2
   - tar
   - gzip
   - wget
