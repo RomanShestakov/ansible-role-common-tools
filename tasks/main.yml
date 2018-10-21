@@ -7,7 +7,6 @@
   with_items:
   - git
   - make
-  - htop
   - strace
   - openssl-devel
   - unzip
