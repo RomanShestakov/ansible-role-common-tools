@@ -6,6 +6,8 @@
     state: present
   with_items:
   - git
+  - autoconf
+  - automake
   - make
   - strace
   - openssl-devel
