@@ -10,6 +10,7 @@
   - make
   - strace
   - openssl-devel
+  - gnutls-utils
   - unzip
   - bzip2
   - tar
