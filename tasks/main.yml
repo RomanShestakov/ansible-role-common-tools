@@ -23,5 +23,7 @@
   - lua
   - ninja-build
   - pkgconfig
-  - uuid-devel
+  # - uuid-devel
+  - libuuid
+  - libuuid-devel
   # when: ansible_os_family == "Centos"
