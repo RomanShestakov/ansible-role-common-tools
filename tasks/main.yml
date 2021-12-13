@@ -21,7 +21,7 @@
   - svn
   - python-devel
   - lua
-  - ninja-build
+  # - ninja-build
   - pkgconfig
   # - uuid-devel
   - libuuid
