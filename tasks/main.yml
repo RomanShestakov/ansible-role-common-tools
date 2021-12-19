@@ -26,4 +26,6 @@
   # - uuid-devel
   - libuuid
   - libuuid-devel
+  # jansson-devel is needed to compile emacs with native json support
+  - jansson-devel
   # when: ansible_os_family == "Centos"
