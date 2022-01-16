@@ -6,15 +6,6 @@
     description: EPEL YUM repo
     baseurl: https://download.fedoraproject.org/pub/epel/$releasever/$basearch/
 
-- name: Add multiple repositories into the same file (2/2)
-  yum_repository:
-    name: rpmforge
-    description: RPMforge YUM repo
-    file: external_repos
-    baseurl: http://apt.sw.be/redhat/el7/en/$basearch/rpmforge
-    mirrorlist: http://mirrorlist.repoforge.org/el7/mirrors-rpmforge
-    enabled: no
-
 - name: Install Common useful tools
   yum:
     name: "{{ item }}"
