@@ -36,4 +36,4 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools
+  - inotify-tools-devel
