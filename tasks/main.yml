@@ -16,7 +16,7 @@
   yum_repository:
     name: epel
     description: EPEL YUM repo
-    baseurl: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    baseurl: https://centos.pkgs.org/8/epel-x86_64/
 
 - name: Install Common useful tools
   yum:
