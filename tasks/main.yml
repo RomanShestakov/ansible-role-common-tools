@@ -1,6 +1,18 @@
 # tasks/main.yml
 
-- name: Add repository
+- name: Add repository base
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/os
+
+- name: Add repository app
+  yum_repository:
+    name: epel
+    description: EPEL YUM repo
+    baseurl: https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/os
+
+- name: Add repository app
   yum_repository:
     name: epel
     description: EPEL YUM repo
