@@ -1,29 +1,11 @@
 # tasks/main.yml
 
-- name: Add repository base
-  yum_repository:
-    name: epel
-    description: EPEL YUM repo
-    baseurl: https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/baseos/os
-
-- name: Add repository app
-  yum_repository:
-    name: epel
-    description: EPEL YUM repo
-    baseurl: https://cdn.redhat.com/content/dist/rhel8/$releasever/x86_64/appstream/os
-
-- name: Add repository app
-  yum_repository:
-    name: epel
-    description: EPEL YUM repo
-    baseurl: https://centos.pkgs.org/8/epel-x86_64/
-
 - name: Install Common useful tools
   yum:
     name: "{{ item }}"
-    state: present
+    state: latest
   with_items:
-  - epel-devel
+  - epel-release
   - autoconf
   - automake
   - make
@@ -49,4 +31,4 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools-devel
+  - inotify-tools
