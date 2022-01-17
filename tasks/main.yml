@@ -30,10 +30,10 @@
   # - ninja-build
   - pkgconfig
   # - uuid-devel
-  - libuuid
+  # - libuuid
   - libuuid-devel
   # jansson-devel is needed to compile emacs with native json support
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  # - inotify-tools
+  - inotify-tools
