@@ -23,9 +23,9 @@
   - gzip
   - wget
   - ncurses-devel
-  - texinfo
+  # - texinfo
   - svn
-  - python-devel
+  - python3
   - lua
   # - ninja-build
   - pkgconfig
@@ -36,4 +36,4 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools-devel
+  # - inotify-tools
