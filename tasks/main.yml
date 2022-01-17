@@ -39,3 +39,9 @@
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
   - inotify-tools-devel
+
+- name: Remove repository from a specific repo file
+  yum_repository:
+    name: epel
+    file: external_repos
+    state: absent
