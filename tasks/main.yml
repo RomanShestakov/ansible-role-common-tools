@@ -1,11 +1,16 @@
 # tasks/main.yml
 
+- name: Add repository
+  yum_repository:
+    name: codeReady
+    description: Red Hat CodeReady Linux Builder for RHEL 8 x86_64 (RPMs)
+    baseurl: https://satellite.mumble/mumble/content/dist/rhel8/$releasever/x86_64/codeready-builder/os
+
 - name: Install Common useful tools
   yum:
     name: "{{ item }}"
-    state: latest
+    state: present
   with_items:
-  - epel-release
   - autoconf
   - automake
   - make
@@ -31,4 +36,4 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools
+  - inotify-tools-devel
