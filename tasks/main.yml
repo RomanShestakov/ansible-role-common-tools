@@ -13,7 +13,7 @@
     name: "{{ item }}"
     state: present
   with_items:
-  - epel-devel
+  - epel-release
   - autoconf
   - automake
   - make
@@ -39,7 +39,7 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools-devel
+  - inotify-tools
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
