@@ -1,10 +1,10 @@
 # tasks/main.yml
 
-# - name: Add repository
-#   yum_repository:
-#     name: epel
-#     description: EPEL
-#     baseurl: http://download.fedoraproject.org/pub/epel
+- name: Add repository
+  yum_repository:
+    name: epel
+    description: EPEL
+    baseurl: https://centos.pkgs.org/8/epel-x86_64/
 
 - name: Install Common useful tools
   yum:
@@ -36,4 +36,4 @@
   - jansson-devel
   # when: ansible_os_family == "Centos"
   # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools
+  - inotify-tools-devel
