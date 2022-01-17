@@ -28,7 +28,7 @@
   - gzip
   - wget
   - ncurses-devel
-  # - texinfo
+  - texinfo
   - svn
   - python3
   - lua
