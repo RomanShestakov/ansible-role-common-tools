@@ -44,6 +44,7 @@
   - python3
   - lua
   - rsync
+  - tmux
   # - ninja-build
   - pkgconfig
   # - uuid-devel
