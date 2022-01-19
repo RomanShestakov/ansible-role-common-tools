@@ -47,7 +47,8 @@
   - ncurses-devel
   - texinfo
   - svn
-  - python3
+  # python is used by GDB is compilied with python support
+  - python3-devel
   - lua
   - rsync
   - tmux
