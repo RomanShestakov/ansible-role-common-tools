@@ -48,7 +48,7 @@
   - texinfo
   - svn
   # python is used by GDB is compilied with python support
-  - python3-devel
+  - python2-devel
   - lua
   - rsync
   - tmux
