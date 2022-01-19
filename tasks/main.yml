@@ -1,14 +1,19 @@
 # tasks/main.yml
 
+
+  # - rpm_key:
+  #     state: present
+  #     key: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8
+
 - name: Install EPEL repo.
   yum:
     name: "{{ epel_repo_url }}"
     state: present
+    disable_gpg_check: yes
   register: result
   until: result is succeeded
   retries: 5
   delay: 10
-  disable_gpg_check: True
   # when: not epel_repofile_result.stat.exists
 
 - name: Install DNF config-manager
