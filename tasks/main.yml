@@ -33,6 +33,8 @@
   - strace
   - openssl-devel
   - gnutls-utils
+  # needed to compile gcc
+  - diffutils
   - unzip
   - bzip2
   - tar
