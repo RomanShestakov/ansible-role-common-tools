@@ -49,6 +49,8 @@
   - ncurses-devel
   - texinfo
   - svn
+  # sysctl - used for kernel panic dumps
+  - procps-ng
   # python is used by GDB is compilied with python support
   - python2-devel
   - lua
