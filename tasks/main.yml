@@ -50,6 +50,7 @@
   - texinfo
   - svn
   - net-tools
+  - netcat
   # sysctl - used for kernel panic dumps
   - procps-ng
   # python is used by GDB is compilied with python support
