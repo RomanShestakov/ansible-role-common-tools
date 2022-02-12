@@ -51,6 +51,8 @@
   - svn
   - net-tools
   - netcat
+  # install ping, etc
+  - iputils
   # sysctl - used for kernel panic dumps
   - procps-ng
   # python is used by GDB is compilied with python support
