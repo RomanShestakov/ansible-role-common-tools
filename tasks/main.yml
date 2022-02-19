@@ -51,6 +51,7 @@
   - svn
   - net-tools
   - netcat
+  - htop
   # install ping, etc
   - iputils
   # sysctl - used for kernel panic dumps
