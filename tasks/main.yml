@@ -39,8 +39,10 @@
   - strace
   - openssl-devel
   - gnutls-utils
-  # needed to compile gcc
+  # diffutils needed to compile gcc
   - diffutils
+  # procps-ng s for sysctl
+  - procps-ng
   - unzip
   - bzip2
   - tar
