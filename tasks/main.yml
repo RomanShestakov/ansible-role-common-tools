@@ -42,7 +42,7 @@
   # diffutils needed to compile gcc
   - diffutils
   # procps-ng s for sysctl
-  - procps-ng
+  # - procps-ng
   - unzip
   - bzip2
   - tar
