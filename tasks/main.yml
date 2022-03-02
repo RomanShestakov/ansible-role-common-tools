@@ -54,6 +54,7 @@
   - net-tools
   - netcat
   - htop
+  - git
   # install ping, etc
   - iputils
   # sysctl - used for kernel panic dumps
