@@ -73,6 +73,8 @@
   - jansson-devel
   # inotify-tools is needed for rebar3_auto plugin
   - inotify-tools
+  # gmp-devel used by GDB
+  - gmp-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
