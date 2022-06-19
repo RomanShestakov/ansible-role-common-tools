@@ -78,6 +78,7 @@
   # llvm/gcc/boost to avoid long build times
   - gcc-toolset-10-gcc
   - llvm-toolset
+  - clang-tools-extra
   - boost-devel
 
 # - name: Remove repository from a specific repo file
