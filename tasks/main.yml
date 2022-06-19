@@ -80,6 +80,7 @@
   - llvm-toolset
   - clang-tools-extra
   - boost-devel
+  - cmake
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
