@@ -75,6 +75,10 @@
   - inotify-tools
   # gmp-devel used by GDB
   - gmp-devel
+  # llvm/gcc/boost to avoid long build times
+  - gcc-toolset-10-gcc
+  - llvm-toolset
+  - boost-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
