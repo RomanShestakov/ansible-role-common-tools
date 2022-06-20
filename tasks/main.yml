@@ -81,7 +81,10 @@
   - clang-tools-extra
   - boost-devel
   - cmake
+  # deps for binance api
   - libcurl-devel
+  - jsoncpp-devel
+  - libwebsockets-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
