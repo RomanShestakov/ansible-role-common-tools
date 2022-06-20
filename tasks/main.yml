@@ -81,6 +81,7 @@
   - clang-tools-extra
   - boost-devel
   - cmake
+  - libcurl-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
