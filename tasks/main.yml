@@ -85,6 +85,7 @@
   - libcurl-devel
   - jsoncpp-devel
   - libwebsockets-devel
+  - mbedtls-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
