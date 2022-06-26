@@ -86,6 +86,7 @@
   - jsoncpp-devel
   - libwebsockets-devel
   - nano
+  - mbedtls-devel
 
 # - name: Remove repository from a specific repo file
 #   yum_repository:
