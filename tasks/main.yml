@@ -129,9 +129,6 @@
   # - rsync
   - tmux
   # - ninja-build
-  # used by cmake
-  - pkg-config
-  - cmake-data
   # # - uuid-devel
   # # - libuuid
   # - libuuid-dev
@@ -146,7 +143,10 @@
   # - llvm-toolset
   # - clang-tools-extra
   # - boost-devel
-  # - cmake
+  - cmake
+    # used by cmake
+  - pkg-config
+  - cmake-data
   #  - nano
   # # deps for binance api
   - gcc-9
