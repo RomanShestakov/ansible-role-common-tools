@@ -129,7 +129,9 @@
   # - rsync
   - tmux
   # - ninja-build
-  # - pkgconfig
+  # used by cmake
+  - pkg-config
+  - cmake-data
   # # - uuid-devel
   # # - libuuid
   # - libuuid-dev
