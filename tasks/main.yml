@@ -101,54 +101,56 @@
   - automake
   - make
   - strace
-  - openssl-dev
-  - gnutls-utils
-  # diffutils needed to compile gcc
-  - diffutils
-  # procps-ng s for sysctl
-  # - procps-ng
-  - unzip
-  - bzip2
-  - tar
-  - gzip
-  - wget
-  - ncurses-dev
-  - texinfo
-  - svn
-  - net-tools
-  - netcat
-  - htop
+  # - openssl-dev
+  # - gnutls-utils
+  # # diffutils needed to compile gcc
+  # - diffutils
+  # # procps-ng s for sysctl
+  # # - procps-ng
+  # - unzip
+  # - bzip2
+  # - tar
+  # - gzip
+  # - wget
+  # - ncurses-dev
+  # - texinfo
+  # - svn
+  # - net-tools
+  # - netcat
+  # - htop
   - git
   # install ping, etc
-  - iputils
-  # sysctl - used for kernel panic dumps
-  - procps-ng
-  # python is used by GDB is compilied with python support
-  - python2-dev
-  - lua
-  - rsync
+  # - iputils
+  # # sysctl - used for kernel panic dumps
+  # - procps-ng
+  # # python is used by GDB is compilied with python support
+  # - python2-dev
+  # - lua
+  # - rsync
   - tmux
   # - ninja-build
-  - pkgconfig
-  # - uuid-devel
-  # - libuuid
-  - libuuid-dev
-  # jansson-devel is needed to compile emacs with native json support
-  - jansson-dev
-  # inotify-tools is needed for rebar3_auto plugin
-  - inotify-tools
-  # gmp-devel used by GDB
-  - gmp-devel
-  # llvm/gcc/boost to avoid long build times
-  - gcc-toolset-10-gcc
-  - llvm-toolset
-  - clang-tools-extra
-  - boost-devel
-  - cmake
-  # deps for binance api
-  - libcurl-dev
-  - jsoncpp-dev
+  # - pkgconfig
+  # # - uuid-devel
+  # # - libuuid
+  # - libuuid-dev
+  # # jansson-devel is needed to compile emacs with native json support
+  # - jansson-dev
+  # # inotify-tools is needed for rebar3_auto plugin
+  # - inotify-tools
+  # # gmp-devel used by GDB
+  # - gmp-devel
+  # # llvm/gcc/boost to avoid long build times
+  # - gcc-toolset-10-gcc
+  # - llvm-toolset
+  # - clang-tools-extra
+  # - boost-devel
+  # - cmake
+  #  - nano
+  # # deps for binance api
+  - gcc-9
+  - g++-9
   - libwebsockets-dev
-  - nano
-  - mbedtls-dev
+  - libcurl4-openssl-dev
+  - libjsoncpp-dev
+  - libmbedtls-dev
   when: ansible_distribution == "Ubuntu"
