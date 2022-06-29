@@ -155,4 +155,5 @@
   - libcurl4-openssl-dev
   - libjsoncpp-dev
   - libmbedtls-dev
+  - libmbedtls14
   when: ansible_distribution == "Ubuntu"
