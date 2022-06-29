@@ -14,12 +14,14 @@
   until: result is succeeded
   retries: 5
   delay: 10
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Rocky"
   # when: not epel_repofile_result.stat.exists
 
 - name: Install DNF config-manager
   yum:
     name: dnf-plugins-core
     state: present
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Rocky"
 
 - name: enable PowerTools repository
   command:
@@ -27,7 +29,7 @@
     warn: false
   when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Rocky"
 
-- name: Install Common useful tools
+- name: Install Common useful tools Centos
   yum:
     name: "{{ item }}"
     state: present
@@ -87,9 +89,66 @@
   - libwebsockets-devel
   - nano
   - mbedtls-devel
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Rocky"
 
-# - name: Remove repository from a specific repo file
-#   yum_repository:
-#     name: epel
-#     file: external_repos
-#     state: absent
+
+- name: Install Common useful tools Ubuntu
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+  - autoconf
+  - automake
+  - make
+  - strace
+  - openssl-dev
+  - gnutls-utils
+  # diffutils needed to compile gcc
+  - diffutils
+  # procps-ng s for sysctl
+  # - procps-ng
+  - unzip
+  - bzip2
+  - tar
+  - gzip
+  - wget
+  - ncurses-dev
+  - texinfo
+  - svn
+  - net-tools
+  - netcat
+  - htop
+  - git
+  # install ping, etc
+  - iputils
+  # sysctl - used for kernel panic dumps
+  - procps-ng
+  # python is used by GDB is compilied with python support
+  - python2-dev
+  - lua
+  - rsync
+  - tmux
+  # - ninja-build
+  - pkgconfig
+  # - uuid-devel
+  # - libuuid
+  - libuuid-dev
+  # jansson-devel is needed to compile emacs with native json support
+  - jansson-dev
+  # inotify-tools is needed for rebar3_auto plugin
+  - inotify-tools
+  # gmp-devel used by GDB
+  - gmp-devel
+  # llvm/gcc/boost to avoid long build times
+  - gcc-toolset-10-gcc
+  - llvm-toolset
+  - clang-tools-extra
+  - boost-devel
+  - cmake
+  # deps for binance api
+  - libcurl-dev
+  - jsoncpp-dev
+  - libwebsockets-dev
+  - nano
+  - mbedtls-dev
+  when: ansible_distribution == "Ubuntu"
