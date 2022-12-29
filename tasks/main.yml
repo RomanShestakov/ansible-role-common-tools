@@ -33,11 +33,30 @@
     name: "{{ item }}"
     state: present
   with_items:
+  - make
+  - glibc-devel
+  - gcc
+  - patch
+  - openssl-devel
+  - gdb
+  - emacs
+  - unzip
+  - tar
+  - rsync
+  - strace
+  - git
+  - tmux
+  - cmake
+  - pkg-config
+  - cmake-data
+  - jsoncpp-devel
+
+
   # - epel-release
   # - autoconf
   # - automake
   # - make
-  - strace
+  #- strace
   # - openssl-devel
   # - gnutls-utils
   # # diffutils needed to compile gcc
