@@ -28,6 +28,13 @@
 #     warn: false
 #   when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Rocky"
 
+- name: Install build tools
+  yum:
+    name: "@Development tools"
+    state: present
+  become: yes
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
+
 - name: Install Common useful tools Centos
   yum:
     name: "{{ item }}"
@@ -50,7 +57,7 @@
   - pkg-config
   - cmake-data
   - jsoncpp-devel
-
+  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
 
   # - epel-release
   # - autoconf
@@ -107,7 +114,7 @@
   # - libwebsockets-devel
   # - nano
   # - mbedtls-devel
-  when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
+  # when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
 
 
 # - name: Install Common useful tools Ubuntu
