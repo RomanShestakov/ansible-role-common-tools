@@ -41,7 +41,8 @@
   - glibc-source
   - gcc
   - patch
-  - openssl-dev
+  - openssl
+  - libssl-dev
   - gdb
   - emacs
   - unzip
