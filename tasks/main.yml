@@ -56,3 +56,11 @@
   - cmake-data
   - libjsoncpp-dev
   when: ansible_distribution == "Ubuntu"
+
+# ubuntu installs jsoncpp into non-standard location
+- name: Create symbolic link for jsoncpp
+  file:
+    src: "/usr/include/jsoncpp/json"
+    dest: "/usr/include/json"
+    state: link
+  when: ansible_distribution == "Ubuntu"
