@@ -29,6 +29,7 @@
   - pkg-config
   - cmake-data
   - jsoncpp-devel
+  - readline-devel
   when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
 
 - name: Install Common useful tools Ubuntu
@@ -55,6 +56,7 @@
   - pkg-config
   - cmake-data
   - libjsoncpp-dev
+  - libreadline-dev
   when: ansible_distribution == "Ubuntu"
 
 # ubuntu installs jsoncpp into non-standard location
