@@ -30,6 +30,7 @@
   - cmake-data
   - jsoncpp-devel
   - readline-devel
+  #- zlib-devel
   when: (ansible_distribution == "CentOS" and ansible_distribution_major_version|int >= 8) or ansible_distribution == "Amazon"
 
 - name: Install Common useful tools Ubuntu
@@ -57,9 +58,17 @@
   - cmake-data
   - libjsoncpp-dev
   - libreadline-dev
+  - zlib1g-dev
+  - clang-11
+  - clangd-11
+  - llvm-11
+  - llvm-11-dev
+  - llvm-11-tools
   when: ansible_distribution == "Ubuntu"
 
+# ATTENTION!
 # ubuntu installs jsoncpp into non-standard location
+# so add symlinks so cmake find_package could correctly find it
 - name: Create symbolic link for jsoncpp
   file:
     src: "/usr/include/jsoncpp/json"
