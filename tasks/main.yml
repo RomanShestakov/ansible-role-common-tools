@@ -1,7 +1,7 @@
 # tasks/main.yml
 
 - name: Install build tools
-  ansible.buildin.dnf:
+  ansible.builtin.dnf:
     name: "@Development tools"
     state: present
   become: yes
