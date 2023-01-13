@@ -26,8 +26,8 @@
   - git
   - tmux
   - cmake
-  - pkg-config
-  - cmake-data
+  # - pkg-config
+  # - cmake-data
   - jsoncpp-devel
   - readline-devel
   #- zlib-devel
