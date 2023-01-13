@@ -25,6 +25,7 @@
   - strace
   - git
   - tmux
+  - python-devel
   # - cmake
   # - pkg-config
   # - cmake-data
