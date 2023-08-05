@@ -18,7 +18,7 @@
   - patch
   - openssl-devel
   - gdb
-  - emacs
+  # - emacs
   - unzip
   - tar
   - rsync
