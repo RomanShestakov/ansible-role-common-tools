@@ -18,6 +18,7 @@
   - patch
   - openssl-devel
   - gdb
+  - json
   # - emacs
   - unzip
   - tar
