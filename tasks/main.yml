@@ -18,7 +18,8 @@
   - patch
   - openssl-devel
   - gdb
-  - json
+  - jansson
+  - tree-sitter
   # - emacs
   - unzip
   - tar
