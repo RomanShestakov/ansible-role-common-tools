@@ -18,9 +18,9 @@
   - patch
   - openssl-devel
   - gdb
-  - jansson
-  - tree-sitter
-  # - emacs
+  # - jansson
+  # - tree-sitter
+  - emacs
   - unzip
   - tar
   - rsync
@@ -95,6 +95,11 @@
     state: latest
   with_items:
   - build-essential
+  - autoconf
+  - gnutls-dev
+  - libjansson4
+  - libjansson-dev
+  - libtree-sitter-dev
   - make
   - glibc-source
   - gcc
