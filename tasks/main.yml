@@ -100,6 +100,8 @@
   - libjansson4
   - libjansson-dev
   - libtree-sitter-dev
+  - textinfo
+  - zlib1g-dev
   - make
   - glibc-source
   - gcc
