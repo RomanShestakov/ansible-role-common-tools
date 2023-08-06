@@ -96,12 +96,12 @@
   with_items:
   - build-essential
   - autoconf
-  # deps for emacs compile -
+  # deps for emacs compile -P
   - libgccjit0
   - libgccjit-10-dev
   - libjansson4
   - libjansson-dev
-  - gnutls-bin
+  - gnutls-dev
   - libtree-sitter-dev
   - texinfo
   - zlib1g-dev
