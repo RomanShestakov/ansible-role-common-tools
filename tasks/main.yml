@@ -45,6 +45,8 @@
   - make
   - glibc-devel
   - gcc
+  - clang
+  - clang-tools-extra
   - patch
   - openssl-devel
   - gdb
