@@ -60,8 +60,11 @@
   - cmake-data
   - jsoncpp-devel
   - readline-devel
+  - gtest-devel
+  - boost
+  - protobuf
   #- zlib-devel
-  when: (ansible_distribution == "Amazon" and ansible_distribution_major_version|int == 2022)
+  when: (ansible_distribution == "Amazon" and ansible_distribution_major_version|int == 2023)
 
 - name: Install Common useful tools Centos
   yum:
