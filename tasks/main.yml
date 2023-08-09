@@ -64,6 +64,7 @@
   - readline-devel
   - gtest-devel
   - boost-devel
+  - boost
   - protobuf-devel
   #- zlib-devel
   when: (ansible_distribution == "Amazon" and ansible_distribution_major_version|int == 2023)
