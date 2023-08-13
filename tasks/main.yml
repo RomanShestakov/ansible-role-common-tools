@@ -119,7 +119,7 @@
   - openssl
   - libssl-dev
   - gdb
-  #- emacs
+  - emacs
   - unzip
   - tar
   - rsync
