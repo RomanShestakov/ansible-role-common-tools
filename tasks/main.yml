@@ -137,7 +137,7 @@
   - clangd
   - libboost-all-dev
 #  - libboost1.81-dev
-  - libgtest
+  - libgtest-dev
   # - llvm
   # - llvm-dev
   # - llvm-tools
