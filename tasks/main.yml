@@ -135,7 +135,7 @@
   - zlib1g-dev
   - clang
   - clangd
-  - libboost-all-devel
+  - libboost-all-dev
   # - llvm
   # - llvm-dev
   # - llvm-tools
