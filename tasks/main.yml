@@ -64,7 +64,7 @@
   - readline-devel
   - gtest-devel
   - boost-devel
-  - boost
+  # - boost
   - protobuf-devel
   #- zlib-devel
   when: (ansible_distribution == "Amazon" and ansible_distribution_major_version|int == 2023)
@@ -135,6 +135,7 @@
   - zlib1g-dev
   - clang
   - clangd
+  - libboost-all-devel
   # - llvm
   # - llvm-dev
   # - llvm-tools
