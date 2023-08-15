@@ -136,6 +136,7 @@
   - clang
   - clangd
   - libboost-all-dev
+  - libgtest-dev
   # - llvm
   # - llvm-dev
   # - llvm-tools
