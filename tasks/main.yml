@@ -135,8 +135,9 @@
   - zlib1g-dev
   - clang
   - clangd
-  - libboost1.81-dev
-  - libgtest-dev
+  - libboost-all-dev
+#  - libboost1.81-dev
+  - libgtest
   # - llvm
   # - llvm-dev
   # - llvm-tools
