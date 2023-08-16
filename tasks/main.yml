@@ -135,8 +135,8 @@
   - zlib1g-dev
   - clang
   - clangd
-#  - libboost-all-dev
-  - libboost1.81-dev
+  - libboost-all-dev
+#  - libboost1.81-dev
   - libgtest-dev
   - erlang
   when: ansible_distribution == "Ubuntu"
