@@ -138,7 +138,8 @@
   - libboost-all-dev
 #  - libboost1.81-dev
   - libgtest-dev
-  - erlang
+  - ncurses-devel
+#  - erlang 
   when: ansible_distribution == "Ubuntu"
 
 # ATTENTION!
