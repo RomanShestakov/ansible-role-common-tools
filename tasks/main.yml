@@ -106,12 +106,12 @@
   # deps for emacs compile -P
   #- libgccjit13
   #- libgccjit-13-dev
-  - libjansson4
-  - libjansson-dev
-  - gnutls-dev
-  - libtree-sitter-dev
-  - texinfo
-  - zlib1g-dev
+  # - libjansson4
+  # - libjansson-dev
+  # - gnutls-dev
+  # - libtree-sitter-dev
+  # - texinfo
+  # - zlib1g-dev
   # ----
   - make
   - glibc-source
