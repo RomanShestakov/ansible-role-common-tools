@@ -103,19 +103,9 @@
   with_items:
   - build-essential
   - autoconf
-  # deps for emacs compile -P
-  #- libgccjit13
-  #- libgccjit-13-dev
-  # - libjansson4
-  # - libjansson-dev
-  # - gnutls-dev
-  # - libtree-sitter-dev
-  # - texinfo
-  # - zlib1g-dev
-  # ----
   - make
   - glibc-source
-  - gcc
+#  - gcc
   - patch
   - openssl
   - libssl-dev
@@ -133,8 +123,8 @@
   - libjsoncpp-dev
   - libreadline-dev
   - zlib1g-dev
-  - clang
-  - clangd
+ # - clang
+ # - clangd
   - libboost-all-dev
 #  - libboost1.81-dev
   - libgtest-dev
